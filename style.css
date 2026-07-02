@@ -264,7 +264,7 @@ img {
    HERO SECTION
    =========================== */
 .hero {
-  background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), url('images/hero-bg.jpeg') center center / cover no-repeat;
   color: var(--white);
   padding: 60px 24px;
   min-height: 520px;
