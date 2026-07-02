@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos Réalisations – Tinten Couverture Saumur (49)</title>
+  <meta name="description" content="Découvrez les réalisations de Tinten Couverture : rénovation toiture, zinguerie, pose Velux à Saumur et dans le Maine-et-Loire." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- BARRE D'URGENCE -->
+  <div class="urgence-bar">
+    <p>Votre toiture a besoin d'un dépannage en urgence ? Nous intervenons sans délai, tous les jours de la semaine. Appelez le <a href="tel:0669578288">06 69 57 82 88</a>.</p>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="header" id="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Tinten Couverture Logo" class="logo" />
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li class="dropdown">
+          <button class="nav-link dropdown-btn">Services <span class="arrow">&#8964;</span></button>
+          <ul class="dropdown-menu">
+            <li><a href="travaux-couverture.html">Travaux de couverture</a></li>
+            <li><a href="renovation-toiture.html">Rénovation toiture</a></li>
+            <li><a href="travaux-zinguerie.html">Zinguerie</a></li>
+            <li><a href="pose-velux.html">Pose Velux</a></li>
+            <li><a href="ravalement-facade.html">Ravalement façade</a></li>
+            <li><a href="urgences.html">Urgences 24h/24</a></li>
+          </ul>
+        </li>
+        <li><a href="qui-sommes-nous.html" class="nav-link">À propos</a></li>
+        <li><a href="realisations.html" class="nav-link">Réalisations</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:0669578288" class="btn-phone"><span class="phone-icon">📞</span> 06 69 57 82 88</a>
+        <a href="contact.html" class="btn-devis">Devis Gratuit</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BOUTON RDV FLOTTANT -->
+  <a href="contact.html" class="rdv-floating">
+    <span class="rdv-icon">📅</span>
+    <span class="rdv-text">PRENDRE RDV</span>
+  </a>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a> <span>›</span> <span>Nos Réalisations</span>
+      </div>
+      <h1>Nos Réalisations</h1>
+      <p>Découvrez nos chantiers de couverture, zinguerie, pose Velux et ravalement de façade réalisés dans le Maine-et-Loire.</p>
+      <a href="contact.html" class="btn-primary">Demander un devis gratuit</a>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container">
+      <div class="realisations-intro">
+        <p>Depuis 14 ans, Tinten Couverture réalise des centaines de chantiers dans le Maine-et-Loire. Voici un aperçu de nos réalisations récentes en couverture, zinguerie, pose de Velux et ravalement de façade.</p>
+      </div>
+
+      <div class="realisations-filters">
+        <button class="filter-btn active" onclick="filterGallery('all', this)">Tous</button>
+        <button class="filter-btn" onclick="filterGallery('couverture', this)">Couverture</button>
+        <button class="filter-btn" onclick="filterGallery('zinguerie', this)">Zinguerie</button>
+        <button class="filter-btn" onclick="filterGallery('velux', this)">Velux</button>
+        <button class="filter-btn" onclick="filterGallery('renovation', this)">Rénovation</button>
+      </div>
+
+      <div class="gallery-grid realisations-gallery">
+        <div class="gallery-item" data-cat="couverture">
+          <img src="images/real1.webp" alt="Rénovation toiture ardoises Saumur" loading="lazy" />
+          <div class="gallery-overlay"><span>Rénovation toiture – Saumur</span></div>
+        </div>
+        <div class="gallery-item" data-cat="couverture">
+          <img src="images/real2.webp" alt="Couverture tuiles Maine-et-Loire" loading="lazy" />
+          <div class="gallery-overlay"><span>Couverture tuiles – Doué-en-Anjou</span></div>
+        </div>
+        <div class="gallery-item" data-cat="zinguerie">
+          <img src="images/real3.webp" alt="Zinguerie gouttières Saumur" loading="lazy" />
+          <div class="gallery-overlay"><span>Zinguerie – Montreuil-Bellay</span></div>
+        </div>
+        <div class="gallery-item" data-cat="renovation">
+          <img src="images/real4.jpg" alt="Rénovation toiture complète" loading="lazy" />
+          <div class="gallery-overlay"><span>Rénovation complète – Saumur</span></div>
+        </div>
+        <div class="gallery-item" data-cat="couverture">
+          <img src="images/real5.webp" alt="Pose ardoises naturelles" loading="lazy" />
+          <div class="gallery-overlay"><span>Ardoises naturelles – Angers</span></div>
+        </div>
+        <div class="gallery-item" data-cat="zinguerie">
+          <img src="images/real6.webp" alt="Zinguerie zinc Saumur" loading="lazy" />
+          <div class="gallery-overlay"><span>Zinguerie zinc – Saumur</span></div>
+        </div>
+        <div class="gallery-item" data-cat="renovation">
+          <img src="images/real7.webp" alt="Rénovation toiture tuiles" loading="lazy" />
+          <div class="gallery-overlay"><span>Rénovation – Longué-Jumelles</span></div>
+        </div>
+        <div class="gallery-item" data-cat="velux">
+          <img src="images/real8.webp" alt="Pose Velux fenêtre de toit" loading="lazy" />
+          <div class="gallery-overlay"><span>Pose Velux – Saumur</span></div>
+        </div>
+        <div class="gallery-item" data-cat="couverture">
+          <img src="images/real9.webp" alt="Couverture ardoises" loading="lazy" />
+          <div class="gallery-overlay"><span>Couverture ardoises – Baugé</span></div>
+        </div>
+        <div class="gallery-item" data-cat="zinguerie">
+          <img src="images/real10.webp" alt="Gouttières aluminium" loading="lazy" />
+          <div class="gallery-overlay"><span>Gouttières aluminium – Saumur</span></div>
+        </div>
+        <div class="gallery-item" data-cat="renovation">
+          <img src="images/real11.webp" alt="Rénovation toiture complète" loading="lazy" />
+          <div class="gallery-overlay"><span>Rénovation – Doué-en-Anjou</span></div>
+        </div>
+        <div class="gallery-item" data-cat="couverture">
+          <img src="images/real12.webp" alt="Couverture tuiles terre cuite" loading="lazy" />
+          <div class="gallery-overlay"><span>Tuiles terre cuite – Saumur</span></div>
+        </div>
+        <div class="gallery-item" data-cat="renovation">
+          <img src="images/real-extra1.webp" alt="Rénovation façade" loading="lazy" />
+          <div class="gallery-overlay"><span>Rénovation façade – Saumur</span></div>
+        </div>
+        <div class="gallery-item" data-cat="zinguerie">
+          <img src="images/real-extra2.webp" alt="Zinguerie chéneau" loading="lazy" />
+          <div class="gallery-overlay"><span>Chéneau zinc – Angers</span></div>
+        </div>
+        <div class="gallery-item" data-cat="couverture">
+          <img src="images/real-extra3.webp" alt="Couverture ardoises" loading="lazy" />
+          <div class="gallery-overlay"><span>Ardoises – Montreuil-Bellay</span></div>
+        </div>
+        <div class="gallery-item" data-cat="renovation">
+          <img src="images/real-extra4.webp" alt="Rénovation toiture" loading="lazy" />
+          <div class="gallery-overlay"><span>Rénovation – Saumur</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Votre projet de couverture à Saumur ?</h2>
+        <p>Contactez nos experts pour un devis gratuit et personnalisé.</p>
+        <div class="cta-btns">
+          <a href="tel:0669578288" class="btn-cta-phone">Appelez maintenant</a>
+          <a href="contact.html" class="btn-cta-devis">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="images/logo.png" alt="Tinten Couverture Logo" class="footer-logo" />
+          <p>Votre expert en couverture, zinguerie et rénovation depuis 14 ans dans le Maine-et-Loire.</p>
+          <a href="contact.html" class="btn-devis footer-devis-btn">Devis Gratuit</a>
+          <p class="footer-certifie">CERTIFIÉ PAR</p>
+          <img src="images/certifie.png" alt="Certifié" class="certifie-img" />
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            <p>24 Boulevard des Demoiselles<br />49400 Saumur</p>
+            <p><a href="tel:0669578288">06 69 57 82 88</a></p>
+            <p><a href="mailto:contact@tinten-couverture.fr">contact@tinten-couverture.fr</a></p>
+            <p>Lun-Ven: 8h-18h</p>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h4>Nos Services</h4>
+          <ul>
+            <li><a href="travaux-couverture.html">Travaux de couverture</a></li>
+            <li><a href="renovation-toiture.html">Rénovation toiture</a></li>
+            <li><a href="travaux-zinguerie.html">Zinguerie</a></li>
+            <li><a href="pose-velux.html">Pose Velux</a></li>
+            <li><a href="ravalement-facade.html">Ravalement façade</a></li>
+            <li><a href="urgences.html">Urgences 24h/24</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Zone d'intervention</h4>
+          <ul>
+            <li><a href="couvreur-saumur.html">Couvreur Saumur</a></li>
+            <li><a href="couvreur-angers.html">Couvreur Angers</a></li>
+            <li><a href="doue-en-anjou.html">Doué-en-Anjou</a></li>
+            <li><a href="montreuil-bellay.html">Montreuil-Bellay</a></li>
+            <li><a href="zone-intervention.html">Voir toutes les villes</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Tinten Couverture. Tous droits réservés. Site web conçu par <a href="#" target="_blank">ALLOSITEWEB</a></p>
+        <div class="footer-links">
+          <a href="qui-sommes-nous.html">À propos</a>
+          <a href="engagements.html">Nos engagements</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/33669578288" class="whatsapp-btn" target="_blank" title="Contacter via WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

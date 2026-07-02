@@ -108,3 +108,24 @@ document.querySelectorAll('.service-card, .avantage-item, .faq-item, .gallery-it
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   observer.observe(el);
 });
+
+// Filtre galerie réalisations
+function filterGallery(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    if (cat === 'all' || item.dataset.cat === cat) {
+      item.classList.remove('hidden');
+    } else {
+      item.classList.add('hidden');
+    }
+  });
+}
+
+// Formulaire contact
+function handleContactForm(e) {
+  e.preventDefault();
+  alert('Merci pour votre message ! Nous vous recontactons sous 24h.');
+  e.target.reset();
+  return false;
+}
